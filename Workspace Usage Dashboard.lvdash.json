@@ -2891,6 +2891,60 @@
         "width" : 6,
         "height" : 3
       }
+    }, {
+      "widget" : {
+        "name" : "6804b76f",
+        "queries" : [ {
+          "name" : "main_query",
+          "query" : {
+            "datasetName" : "d9fb6452",
+            "fields" : [ {
+              "name" : "title_tags",
+              "expression" : "`title_tags`"
+            }, {
+              "name" : "count(title_top)",
+              "expression" : "COUNT(`title_top`)"
+            } ],
+            "disaggregated" : false
+          }
+        } ],
+        "spec" : {
+          "version" : 3,
+          "widgetType" : "bar",
+          "encodings" : {
+            "x" : {
+              "fieldName" : "title_tags",
+              "scale" : {
+                "type" : "categorical",
+                "sort" : {
+                  "by" : "y-reversed"
+                }
+              },
+              "displayName" : "title_tags"
+            },
+            "y" : {
+              "fieldName" : "count(title_top)",
+              "scale" : {
+                "type" : "quantitative"
+              },
+              "displayName" : "Count of title_top"
+            }
+          },
+          "frame" : {
+            "title" : "Title Trends",
+            "showTitle" : true
+          }
+        }
+      },
+      "position" : {
+        "x" : 0,
+        "y" : 67,
+        "width" : 3,
+        "height" : 6
+      }
     } ]
+  }, {
+    "name" : "4826d0d4",
+    "displayName" : "test page"
   } ]
 }
